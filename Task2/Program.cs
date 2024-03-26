@@ -24,7 +24,7 @@ namespace Task2
 {
     internal class Program
     {
-        class Rectangle
+        class Rectangle // Класи треба робити в окремій файли!
         {
             private double side1, side2;
 
