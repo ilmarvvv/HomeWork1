@@ -9,13 +9,14 @@ namespace Task4
 {
     internal class Figure
     {
+        //Тут краще робити через массив
         Point a = null;
         Point b = null;
         Point c = null;
         Point d = null;
         Point e = null;
 
-        public Figure(Point A, Point B, Point C) 
+        public Figure(Point A, Point B, Point C) //Додавання елементів до массива
         {
             this.a = A; 
             this.b = B; 
@@ -42,7 +43,7 @@ namespace Task4
             Console.WriteLine($"Відрізок {Point1.Text}{Point2.Text} = {LengthSide}");
             return LengthSide;
         }
-        public void PerimeterCalculator()
+        public void PerimeterCalculator() //Якщо у Вас буде массив, обробку данних можно зробити на багато краще і легше. І універсальніше 
         {
             double perimeter = 0;
 
