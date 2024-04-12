@@ -34,6 +34,15 @@ namespace Task2
                 this.side2 = side2;
             }
 
+            public double Area
+            {
+                get { return AreaCalculator(side1, side2); }
+            }
+            public double Perimeter
+            {
+                get { return PerimeterCalculator(side1, side2); }
+            }
+
             private double AreaCalculator(double side1, double side2)
             {
                 return side1 * side2;
@@ -44,14 +53,7 @@ namespace Task2
                 return 2 * (side1 + side2);
             }
 
-            public double Area
-            {
-                get { return AreaCalculator(side1, side2); }
-            }
-            public double Perimeter
-            {
-                get { return PerimeterCalculator(side1, side2); }
-            }
+            
 
         }
         static void Main(string[] args)
