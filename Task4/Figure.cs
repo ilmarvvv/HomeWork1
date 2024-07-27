@@ -39,7 +39,7 @@ namespace Task4
         }
         private double LengthSide(Point Point1, Point Point2)
         {
-            double LengthSide = Math.Sqrt(Math.Pow((Point2.PointA - Point1.PointA), 2) + Math.Pow((Point2.PointB - Point1.PointB), 2));
+            double LengthSide = Math.Sqrt(Math.Pow(Point2.PointA - Point1.PointA, 2) + Math.Pow(Point2.PointB - Point1.PointB, 2));
             Console.WriteLine($"Відрізок {Point1.Text}{Point2.Text} = {LengthSide}");
             return LengthSide;
         }
